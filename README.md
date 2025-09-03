@@ -37,3 +37,12 @@
 - GST portal requires JSON format upload for bulk invoices.
 - SaaS system should auto-sync invoices → generate IRN + QR code → push back into billing system.
 - Role-based authentication as per GSTN guidelines.
+
+## Python Sample
+
+A minimal Python module `gst_invoice.py` demonstrates GSTIN validation and
+basic tax calculations for invoices. Run tests with:
+
+```bash
+pytest
+```
