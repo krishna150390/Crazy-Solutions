@@ -50,6 +50,8 @@ class Invoice:
     buyer_gstin: str
     seller_state: str  # state code e.g., '29'
     supply_state: str  # state code e.g., '29'
+    number: str = ""
+    date: str = ""
     items: List[InvoiceItem] = field(default_factory=list)
 
     def add_item(self, item: InvoiceItem) -> None:

@@ -46,3 +46,8 @@ basic tax calculations for invoices. Run tests with:
 ```bash
 pytest
 ```
+
+The companion `gst_reports.py` module can output CSV snippets for common
+GST returns like GSTR-1, GSTR-2B, GSTR-3B and GSTR-9. These helpers accept
+`Invoice` objects and emit header-only formats compatible with the GST
+portal.
